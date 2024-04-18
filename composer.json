@@ -1,6 +1,6 @@
 {
     "name": "barcode-bakery/gs1ai",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "license": [
         "proprietary",
         "CC-BY-NC-ND-4.0"
@@ -27,12 +27,14 @@
         "barcode",
         "generator",
         "bakery",
+        "barcodebakery",
         "code128",
         "gs1",
         "gs1-128",
         "ai"
     ],
     "require": {
-        "php": ">=7.4"
+        "php": ">=7.4",
+        "barcode-bakery/barcode-common": ">=7.0.4"
     }
 }
