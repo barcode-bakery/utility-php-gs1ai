@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 /**
@@ -10,6 +11,7 @@ declare(strict_types=1);
  * Copyright (C) Jean-Sebastien Goupil
  * http://www.barcodebakery.com
  */
+
 namespace BarcodeBakery\Common\GS1;
 
 use BarcodeBakery\Common\GS1\AIData;
@@ -20,10 +22,11 @@ class GS1AI
     /**
      * Gets the default AI Data.
      *
-     * @return array[AIData]
+     * @return AIData[]
      */
-    public static function getDefaultAIData() {
-        return array(
+    public static function getDefaultAIData()
+    {
+        return [
             new AIData('00',   KindOfData::NUMERIC,          18, 18, true,  'Serial Shipping Container Code (SSCC-18)'),
             new AIData('01',   KindOfData::NUMERIC,          14, 14, true,  'Global Trade Item Number (GTIN)'),
             new AIData('02',   KindOfData::NUMERIC,          14, 14, true,  'GTIN of Contained Trade Items'),
@@ -209,6 +212,6 @@ class GS1AI
             new AIData('97',   KindOfData::ALPHA_NUMERIC,    1,  90, false, 'Internal Company Codes'),
             new AIData('98',   KindOfData::ALPHA_NUMERIC,    1,  90, false, 'Internal Company Codes'),
             new AIData('99',   KindOfData::ALPHA_NUMERIC,    1,  90, false, 'Internal Company Codes')
-        );
+        ];
     }
 }
